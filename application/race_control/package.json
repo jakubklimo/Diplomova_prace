@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "race_control",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.22"
+    "@tailwindcss/vite": "^4.1.16",
+    "tailwindcss": "^4.1.16",
+    "vue": "^3.5.22",
+    "vue-i18n": "^11.1.12"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",
@@ -17,6 +20,7 @@
     "@vue/tsconfig": "^0.8.1",
     "typescript": "~5.9.3",
     "vite": "^7.1.7",
+    "vite-plugin-pwa": "^1.1.0",
     "vue-tsc": "^3.1.0"
   }
 }
