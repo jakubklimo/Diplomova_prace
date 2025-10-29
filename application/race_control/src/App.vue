@@ -1,14 +1,19 @@
 <template>
-  <div class="flex min-h-screen">
+  <div class="flex flex-col md:flex-row min-h-screen">
+    <Topbar />
     <Sidebar />
 
     <main class="flex-1 p-6 bg-gray-100">
-      <h1 class="text-3xl font-bold mb-4">Dashboard</h1>
-      <p>Zde bude obsah aplikace.</p>
+      <RouterView />
     </main>
   </div>
+
+  <div v-html="icons"></div>
 </template>
 
 <script setup lang="ts">
-import Sidebar from './components/Sidebar.vue';
+import { RouterView } from 'vue-router';
+import Sidebar from './components/layout/Sidebar.vue';
+import Topbar from './components/layout/Topbar.vue';
+import icons from './assets/icons/icons.svg?raw';
 </script>

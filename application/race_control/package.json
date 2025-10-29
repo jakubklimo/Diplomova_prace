@@ -1,7 +1,7 @@
 {
   "name": "race_control",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
+    "pinia": "^3.0.3",
     "tailwindcss": "^4.1.16",
     "vue": "^3.5.22",
-    "vue-i18n": "^11.1.12"
+    "vue-i18n": "^11.1.12",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
     "@types/node": "^24.6.0",

@@ -1,6 +1,8 @@
 import { createApp } from 'vue';
 import './assets/css/style.css';
 import App from './App.vue';
+import { router } from './router';
+import { createPinia } from 'pinia';
 
 import { createI18n } from 'vue-i18n';
 import cs from './locales/cs.json';
@@ -24,5 +26,7 @@ const i18n = createI18n({
 
 // App settings
 const app = createApp(App);
+app.use(router);
+app.use(createPinia());
 app.use(i18n);
 app.mount('#app');
